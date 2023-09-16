@@ -8,17 +8,25 @@ Código Condição de pagamento:
 4 - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
-const preco = 50;
-const formaPag = 2;
+function aplicarDesconto(valor, desconto){
+    return (valor - (valor * (desconto / 100)));
+}
+
+function aplicarJuros(valor, juros){
+    return(valor + (valor * (juros / 100)));
+}
+
+const preco = 100;
+const formaPag = 4;
 
 if(formaPag === 1){
-    console.log(preco - (preco * 0.1))
+    console.log(aplicarDesconto(preco, 10))
 }else if(formaPag === 2){
-    console.log(preco - (preco * 0.15))
+    console.log(aplicarDesconto(preco,15))
 }else if(formaPag === 3){ 
     console.log(preco)
 }else if(formaPag === 4){
-    console.log(preco + (preco * 0.1))
+    console.log(aplicarJuros(preco,10))
 }else{
     console.log('Compra não realizada')
 }
