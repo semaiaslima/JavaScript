@@ -1,15 +1,12 @@
 const pessoa = {
-    nome: 'Semaias de Oliveira Lima',
-    idade: 23,
-    
+    nome: 'Semaias Lima',
+    idade: 24,
+
     descrever: function(){
         console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
     }
+}
 
-};
+const atributo = 'idade';
 
-
-pessoa.nome = 'João';
-pessoa.idade = 20;
-
-pessoa.descrever();
+console.log(pessoa[atributo]);
