@@ -1,4 +1,4 @@
-const sema = {
+const pessoa = {
     nome: 'Semaias de Oliveira Lima',
     idade: 23,
     
@@ -9,4 +9,8 @@ const sema = {
 
 };
 
-sema.descrever();
+
+pessoa.nome = 'João';
+pessoa.idade = 20;
+
+pessoa.descrever();
